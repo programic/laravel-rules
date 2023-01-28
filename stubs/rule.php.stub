@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Validation\Rule;
+use Programic\Rules\Rule as BaseRule;
+
+class RULE_NAME extends BaseRule
+{
+    public function prepare()
+    {
+
+    }
+
+    public function base(): array
+    {
+        return [];
+    }
+
+    public function store(): array
+    {
+        return [];
+    }
+
+    public function update(): array
+    {
+        return [];
+    }
+}

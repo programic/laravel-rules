@@ -1,0 +1,40 @@
+{
+    "name": "programic/laravel-rules",
+    "license": "proprietary",
+    "type": "package",
+    "description": "Extra rules intance",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Programic",
+            "email": "development@programic.com",
+            "homepage": "https://programic.com",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Programic\\Rules\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Programic\\Rules\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Programic\\Rules\\RulesServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}
